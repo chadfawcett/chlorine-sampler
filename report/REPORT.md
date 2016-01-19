@@ -1,8 +1,8 @@
 # Chlorine Sampler
 ### Comp 4480 Directed Studies Final Report
 
-**Student**: Chad Fawcett
-**Supervisors**: Kevin O'neil, Sharon Brewer
+**Student**: Chad Fawcett  
+**Supervisors**: Kevin O'neil, Sharon Brewer  
 Winter 2015
 
 ## Table of Contents
