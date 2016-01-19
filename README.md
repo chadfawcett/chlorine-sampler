@@ -1,11 +1,9 @@
-# Smart Phone Chlorine Sampler
+# Chlorine Sampler
 
-Taking chlorine readings using an Android smart phone and a colour sensor.
+Taking chlorine readings using an a computer or smart phone, Arduino and a colour sensor.
 
 ## Components
 
-* Android phone or tablet that supports USB On the Go (OTG)
-* Arduino with FTDI serial over USB
+* Arduino with serial over USB
 * [Adafruit RGB colour sensor](https://www.adafruit.com/products/1334)
-* USB OTG cable
 * Chlorine colour reagent
