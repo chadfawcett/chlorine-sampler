@@ -34,4 +34,8 @@ The [WaterLink Spin](http://www.lamotte.com/en/pool-spa/digital-testing/3577.htm
 
 ## Software Technology
 
+## Challenges Faced
+
+## Further Research
+
 ## Conclusion
