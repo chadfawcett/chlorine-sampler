@@ -7,13 +7,15 @@ Winter 2015
 
 ## Table of Contents
 
-Summary
-Problem Statement
-Existing Solutions
-Solution Overview
-Hardware Technology
-Software Technology
-Conclusion
+Summary  
+Problem Statement  
+Existing Solutions  
+Solution Overview  
+Hardware Technology  
+Software Technology  
+Challenges Faced  
+Further Research  
+Conclusion  
 
 ## Summary
 Effectively testing drinking water for chlorine levels can be a tough task. Automated systems are often very expensive and most small treatment centres can’t afford the equipment. The cheaper alternative is to test manually, either using testing strips or a liquid reagent. Both of these less expensive methods rely on the operator to compare the colour of the sample to a chart of known values with is prone to error. Whether it be an expensive automated system, or manual tests, there appears to be lots of room for improvement.
