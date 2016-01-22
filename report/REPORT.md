@@ -8,16 +8,16 @@ Winter 2015
 ## Table of Contents
 
 * [Summary](#summary)
-* [Problem Statement](problems-tatement)
-* [Existing Solutions](existing-solutions)
-  * [eXact iDip](exact-idip)
-  * [WaterLink Spin](waterlink-spin)
-* [Solution Overview](solution-overview)
-* [Hardware Technology](hardware-technology)
-* [Software Technology](software-technology)
-* [Challenges Faced](challenges-faced)
-* [Further Research](further-research)
-* [Conclusion](conclusion)
+* [Problem Statement](#problem-statement)
+* [Existing Solutions](#existing-solutions)
+  * [eXact iDip](#exact-idip)
+  * [WaterLink Spin](#waterlink-spin)
+* [Solution Overview](#solution-overview)
+* [Hardware Technology](#hardware-technology)
+* [Software Technology](#software-technology)
+* [Challenges Faced](#challenges-faced)
+* [Further Research](#further-research)
+* [Conclusion](#conclusion)
 
 ## <a name="summary"></a>Summary
 Effectively testing drinking water for chlorine levels can be a tough task. Automated systems are often very expensive and most small treatment centres can’t afford the equipment. The cheaper alternative is to test manually, either using testing strips or a liquid reagent. Both of these less expensive methods rely on the operator to compare the colour of the sample to a chart of known values with is prone to error. Whether it be an expensive automated system, or manual tests, there appears to be lots of room for improvement.
