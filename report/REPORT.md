@@ -20,6 +20,7 @@ Fall 2015
   * [Micro-controller](#micro-controller)
     * [Arduino Uno](#arduino-uno)
 * [Software Technology](#software-technology)
+  * [Adafruit Colour Sensor Driver](#adafruit-driver)
 * [Challenges Faced](#challenges-faced)
 * [Further Research](#further-research)
 * [Conclusion](#conclusion)
@@ -57,6 +58,8 @@ The COLSEN01 Colour Sensor Module is similar to the Adafruit module but it lacks
 Based on the colour sensor choice, the Arduino was the best choice for a Micro-controller. There are several choices that could have worked, but the Arduino is a very popular choice with lots of documentation and a large community behind them. In addition to the Adafruit colour sensor including an Arduino library for interfacing with it, I also personally have experience with the Arduino making it a lot more familiar and easier to understand and use new libraries.
 
 ## <a name="software-technology"></a>Software Technology
+### <a name="adafruit-driver"></a>Adafruit Colour Sensor Driver
+The [Adafruit TCS34725 Colour Sensor Driver](https://github.com/adafruit/Adafruit_TCS34725) is an Arduino libarary developed by Adafruit to easilly communicate with the colour sensor using an Arduino. The sensor communicates over the I2C protocol. This library makes the reading from the sensor much easier as the use does not have to worry about the complications of communicating with the sensor.
 
 ## <a name="challenges-faced"></a>Challenges Faced
 
