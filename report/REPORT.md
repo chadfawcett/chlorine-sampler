@@ -17,6 +17,8 @@ Fall 2015
     * [Adafruit RGB Color Sensor](#adafruit-rgb)
     * [SparkFun RGB Light Sensor](#sparkfun-rgb)
     * [COLSEN01 Colour Sensor Module](#colsen01)
+  * [Micro-controller](#micro-controller)
+    * [Arduino](#arduino)
 * [Software Technology](#software-technology)
 * [Challenges Faced](#challenges-faced)
 * [Further Research](#further-research)
@@ -49,6 +51,9 @@ The SparkFun RGB Light Sensor is another sensor that work for our needs, however
 
 #### <a name="colsen01"></a>[COLSEN01 Colour Sensor Module](http://www.elecfreaks.com/store/color-sensor-module-colsen01-p-285.html?zenid=8095153d156bd520dc8d83f4e4b3af49)
 The COLSEN01 Colour Sensor Module is similar to the Adafruit module but it lacks the infrared filter and has a higher price point. The infrared filter on the Adafruit module blocks out the infrared light coming into the sensor which helps produce a more accurate reading. The fact that this modules does not have the filter, made it clear that is was not the right module for the job.
+
+### <a name="micro-controller"></a>Micro-controller
+#### <a name="arduino"></a>Arduino
 
 ## <a name="software-technology"></a>Software Technology
 
