@@ -15,7 +15,7 @@ Fall 2015
 * [Hardware Technology](#hardware-technology)
   * [Colour Sensor](#colour-sensor)
     * [Adafruit RGB Color Sensor](#adafruit-rgb)
-    * [Sparkfun RGB Light Sensor](#sparkfun-rgb)
+    * [SparkFun RGB Light Sensor](#sparkfun-rgb)
     * [COLSEN01 Colour Sensor Module](#colsen01)
 * [Software Technology](#software-technology)
 * [Challenges Faced](#challenges-faced)
@@ -44,9 +44,11 @@ The [WaterLink Spin](http://www.lamotte.com/en/pool-spa/digital-testing/3577.htm
 #### <a name="adafruit-rgb"></a>[Adafruit RGB Color Sensor with IR Filter and White Led](https://www.adafruit.com/products/1334)
 The Addafruit colour sensor is the one I decided to use for the project. The reason for this is simply because it is an all-in-one package. It includes a logic level shifting circuit so the module can be communicated with using either 3.3 volts or 5 volts. Having the logic level shifting built into the module simplifies the prototyping circuit as we don't have to implement it ourselves.
 
-#### <a name="sparkfun-rgb"></a>[Sparkfun RGB Light Sensor](https://www.sparkfun.com/products/12829)
+#### <a name="sparkfun-rgb"></a>[SparkFun RGB Light Sensor](https://www.sparkfun.com/products/12829)
+The SparkFun RGB Light Sensor is another sensor that work for our needs, however it does not include the logic level shifting built in. For this reason, the Adafruit module was a better choice for what we needed. It also has an infrared filter over the colour sensor that improves accuracy.
 
 #### <a name="colsen01"></a>[COLSEN01 Colour Sensor Module](http://www.elecfreaks.com/store/color-sensor-module-colsen01-p-285.html?zenid=8095153d156bd520dc8d83f4e4b3af49)
+The COLSEN01 Colour Sensor Module is similar to the Adafruit module but it lacks the infrared filter and has a higher price point. The infrared filter on the Adafruit module blocks out the infrared light coming into the sensor which helps produce a more accurate reading. The fact that this modules does not have the filter, made it clear that is was not the right module for the job.
 
 ## <a name="software-technology"></a>Software Technology
 
