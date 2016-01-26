@@ -66,7 +66,9 @@ Based on the colour sensor choice, the Arduino was the best choice for a Micro-c
 The [Adafruit TCS34725 Colour Sensor Driver](https://github.com/adafruit/Adafruit_TCS34725) is an Arduino libarary developed by Adafruit to easilly communicate with the colour sensor using an Arduino. The sensor communicates over the I2C protocol. This library makes the reading from the sensor much easier as the use does not have to worry about the complications of communicating with the sensor.
 
 ## <a name="challenges-faced"></a>Challenges Faced
+### <a name="arduino-problem"></a>Arduino
+Part of the scope of this project was to see if a smart phone could be used to communicate with the Arduino in order to get the colour reading. This would allow for operators in the field to be able to take readings on the fly. Using the Android USB On-the-Go (OTG) capabilities of some models, it would be possible to communicate with the Arduino.
 
-## <a name="further-research"></a>Further Research
+The problem I faced was that the Arduino chosen for the project was a newer model than what my experience was based on. The newer model was using a different protocol than the older models for communicatin over USB. Since just the newest model of Arduino Uno used this protocol, all the information available online for communicating with Android was based on the older protocol. Knowing now that a different protocol is in place, with a little bit more time spent, the Android App component of the project could be implemented.
 
 ## <a name="conclusion"></a>Conclusion
