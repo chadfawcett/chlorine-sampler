@@ -35,6 +35,8 @@ Manual testing can present lots of difficulties. From room lighting to partial c
 
 Colour blindness happens to be a fairly common occurance among people. It's esitimated that approximately 8.0% of men and 0.4% of women are affected by some type of colour blindness. Nearly 95% of those affected have a common abnormal perception of red and green colours [(Color Blindness Prevelance)](http://www.news-medical.net/health/Color-Blindness-Prevalence.aspx). This is important to know as a lot of water testing mistures turn a red or green tint for the different amounts of chlorine/pH in the water.
 
+Manual data entry also gives room for error. Having an operator manually record the reading means they need to double check that everything is entered correctly. Even with a causious data enterer, typos can still happen which could cause a lot of problem. Either a false positive, causing alert for people drinking the water. Or even worse, a false negative, which would mean the people drinking the water may never know that it's not clean.
+
 ## <a name="existing-solutions"></a>Existing Solutions
 ### <a name="exact-idip"></a>eXact iDip
 The [eXact iDip](http://www.sensafe.com/idip/) sensor, connected to phones wirelessly via bluetooth, but offers little features once the reading is on the phone. The app stores the reading locally with a geo-reference tagged to the sample test results. The only exporting of data is done through email. It appears that the main reason why the mobile phone connection was made was so that additional test functionality for the device could be sold after the fact as in-app purchases.
