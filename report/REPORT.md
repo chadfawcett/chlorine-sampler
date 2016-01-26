@@ -22,6 +22,7 @@ Fall 2015
 * [Software Technology](#software-technology)
   * [Adafruit Colour Sensor Driver](#adafruit-driver)
 * [Challenges Faced](#challenges-faced)
+  * [Arduino](#arduino-problem)
 * [Conclusion](#conclusion)
 
 ## <a name="summary"></a>Summary
