@@ -91,6 +91,11 @@ Based on the colour sensor choice, the Arduino was the best choice for a Micro-c
 ### <a name="adafruit-driver"></a>Adafruit Colour Sensor Driver
 The [Adafruit TCS34725 Colour Sensor Driver](https://github.com/adafruit/Adafruit_TCS34725) is an Arduino libarary developed by Adafruit to easilly communicate with the colour sensor using an Arduino. The sensor communicates over the I2C protocol. This library makes the reading from the sensor much easier as the use does not have to worry about the complications of communicating with the sensor.
 
+## <a name=""></a>Results
+Based on the reasearch done, I would say the Adafruit RGB Color Sensor paired with an Arduino would be a great setup to do water sampling. While the tests performed were only done using a chlorine reagent, the hardware and software could easily be modified to work with various other reagents.
+
+The hardware solution could also be paired with many different software solutions. My tests incorporated connecting the Arduino to a computer to read the results, but this is not the only option. Smart phones would allow for a very portable solution to run the analysis software. Another mobile solution would be to create a standalone solution that displays the results directly to a display. This last solution, however possible, is heading more in the direction of what is already available on the market. The standalone devices are usually very closed and more expensive because they can't take advantage of the popularity of smart phones to bring down the price.
+
 ## <a name="challenges-faced"></a>Challenges Faced
 ### <a name="arduino-problem"></a>Arduino
 Part of the scope of this project was to see if a smart phone could be used to communicate with the Arduino in order to get the colour reading. This would allow for operators in the field to be able to take readings on the fly. Using the Android USB On-the-Go (OTG) capabilities of some models, it would be possible to communicate with the Arduino.
