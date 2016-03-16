@@ -5,7 +5,7 @@
 **Supervisors**: Kevin O'neil, Sharon Brewer  
 Fall 2015
 
-![Arduino and Colour Sensor](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/light_2013_05_18_IMG_1791-1024.jpg)  
+![Arduino and Colour Sensor](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/light_2013_05_18_IMG_1791-1024.jpg)  
 Photo by [Adafruit](https://learn.adafruit.com/adafruit-color-sensors/assembly-and-wiring)
 
 ## Table of Contents
@@ -42,13 +42,13 @@ Manual data entry also allows room for error. Having an operator manually record
 
 ## <a name="existing-solutions"></a>Existing Solutions
 ### <a name="exact-idip"></a>eXact iDip
-![exact idip](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/eXactiDip393X400.jpg)  
+![exact idip](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/eXactiDip393X400.jpg)  
 Photo by [Sansafe](http://www.sensafe.com/idip/)
 
 The [eXact iDip](http://www.sensafe.com/idip/) sensor uses colour sensing technology to read various types of water testing samples. The device connects to phones wirelessly via bluetooth, but offers little features once the reading is on the phone. The app stores the reading locally with a geo-reference tagged to the sample test results. The only exporting of data is done through email. It appears that the main reason why the mobile phone connection was made was so that additional test functionality for the device could be sold after the fact as in-app purchases.
 
 ### <a name="waterlink-spin"></a>WaterLink Spin
-![waterlink spin](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/wl_spin_mobile.jpg)  
+![waterlink spin](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/wl_spin_mobile.jpg)  
 Photo by [LaMotte](http://www.lamotte.com/en/pool-spa/digital-testing/3577.html)
 
 The [WaterLink Spin](http://www.lamotte.com/en/pool-spa/digital-testing/3577.html) is a very interesting looking tester. It is targeted for the pool and spa industry but it does use the same photo sensing technique as the eXact iDip so it could be accurate enough for water system testing. The interesting thing about this tester is that it includes disks with several testing reagents in separate sections of the disk. The disk is then spun distributing the water sample into the separate section of the disk. Then the colour of each section is then read in order to determine the test results. The way this system was implemented removes a lot of room for human error by not requiring the user to mix in the reagents or interpret the results.
@@ -56,33 +56,33 @@ The [WaterLink Spin](http://www.lamotte.com/en/pool-spa/digital-testing/3577.htm
 ## <a name="solution-overview"></a>Solution Overview
 The solutions consists of both hardware and software. The hardware, consists of a micro-controller and a colour sensor. The software helps these devices communicate between each other as well as between the micro-controller and attached computer.
 
-![Sampling](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/IMG_0182.JPG)
+![Sampling](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/IMG_0182.JPG)
 
 The hardware is capable of very accurately reading the colour of a chlorine sample. With this colour reading, the software can then compare the current sample to known values that correspond to chlorine levels. This removes the need for the operator to make a manual comparison of the colour to known values reducing the risks of a human error when reading the sample.
 
 ## <a name="hardware-technology"></a>Hardware Technology
 ### <a name="colour-sensor"></a>Colour Sensor
 #### <a name="adafruit-rgb"></a>[Adafruit RGB Color Sensor with IR Filter and White Led](https://www.adafruit.com/products/1334)
-![adafruit colour sensor](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/AdafruitColourSensor.jpeg)  
+![adafruit colour sensor](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/AdafruitColourSensor.jpeg)  
 Photo by [Adafruit](https://www.adafruit.com/products/1334)
 
 The Addafruit colour sensor is the one I decided to use for the project. The reason for this is simply because it is an all-in-one package. Basically it is the simplest hardware package to integrate into the solution. It includes a logic level shifting circuit so the module can be operated using either 3.3 volts or 5 volts. Having the logic level shifting built into the module simplifies the prototyping circuit as we don't have to implement it seperately ourselves.
 
 #### <a name="sparkfun-rgb"></a>[SparkFun RGB Light Sensor](https://www.sparkfun.com/products/12829)
-![sparkfun RGB light sensor](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/12829-01.jpg)  
+![sparkfun RGB light sensor](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/12829-01.jpg)  
 Photo by [SparkFun](https://www.sparkfun.com/products/12829)
 
 The SparkFun RGB Light Sensor is another sensor that work for our needs, however it does not include the logic level shifting built in. For this reason, the Adafruit module was a better choice for what we needed. It also has an infrared filter over the colour sensor that improves accuracy.
 
 #### <a name="colsen01"></a>[COLSEN01 Colour Sensor Module](http://www.elecfreaks.com/store/color-sensor-module-colsen01-p-285.html?zenid=8095153d156bd520dc8d83f4e4b3af49)
-![colsen module](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/report/report/data/BK_COLSEN01_1.jpg)  
+![colsen module](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/BK_COLSEN01_1.jpg)  
 Photo by [elecfreaks](http://www.elecfreaks.com/store/color-sensor-module-colsen01-p-285.html?zenid=8095153d156bd520dc8d83f4e4b3af49)
 
 The COLSEN01 Colour Sensor Module is similar to the Adafruit module but it lacks the infrared filter and has a higher price point. The infrared filter on the Adafruit module blocks out the infrared light coming into the sensor which helps produce a more accurate reading. The fact that this module does not have the filter, made it clear that is was not the right module for the job.
 
 ### <a name="micro-controller"></a>Micro-controller
 #### <a name="arduino-uno"></a>[Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
-![Arduino Uno](https://github.com/chadfawcett/chlorine-sampler/blob/report/report/data/36b21d3462e60577766300900621886a.image.538x354.jpg)  
+![Arduino Uno](https://github.com/chadfawcett/chlorine-sampler/blob/master/report/data/36b21d3462e60577766300900621886a.image.538x354.jpg)  
 Photo by [Arduino](https://store.arduino.cc/product/GBX00066)
 
 Based on the colour sensor choice, the Arduino was the best choice for a Micro-controller. There are several choices that could have worked, but the Arduino is a very popular choice with lots of documentation and a large community behind it. The Adafruit colour sensor includes an Arduino library for interfacing to it. Additionally, I have past experience working with the Arduino making it a prefered platform for this project.
