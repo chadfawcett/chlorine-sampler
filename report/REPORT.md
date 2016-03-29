@@ -82,7 +82,7 @@ The COLSEN01 Colour Sensor Module is similar to the Adafruit module but it lacks
 
 ### <a name="micro-controller"></a>Micro-controller
 #### <a name="arduino-uno"></a>[Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
-![Arduino Uno](https://github.com/chadfawcett/chlorine-sampler/blob/master/report/data/36b21d3462e60577766300900621886a.image.538x354.jpg)  
+![Arduino Uno](https://raw.githubusercontent.com/chadfawcett/chlorine-sampler/master/report/data/36b21d3462e60577766300900621886a.image.538x354.jpg)  
 Photo by [Arduino](https://store.arduino.cc/product/GBX00066)
 
 Based on the colour sensor choice, the Arduino was the best choice for a Micro-controller. There are several choices that could have worked, but the Arduino is a very popular choice with lots of documentation and a large community behind it. The Adafruit colour sensor includes an Arduino library for interfacing to it. Additionally, I have past experience working with the Arduino making it a prefered platform for this project.
